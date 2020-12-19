@@ -17,6 +17,15 @@ Flutter uses and OOP language called Dart, which is optimized for UI, fast on al
 - Build Method
 
 ```sh
+# INSTALL FLUTTER
+# ...
+# INSTALL DART SDK
+sudo apt-get install dart; sudo apt-get update;
+sudo sh -c 'wget -qO- https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stable.list > /etc/apt/sources.list.d/dart_stable.list'
+sudo sh -c 'wget -qO- https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -'
+echo 'export PATH="$PATH:/usr/lib/dart/bin"' >> ~/.profile
+pub --help # "Pub is a package manager for Dart"
+
 # CHECK FLUTTER AND DART INSTALLATION
 which flutter dart # Check the location/existence of flutter and dart binaries
 flutter upgrade --force
@@ -33,6 +42,7 @@ kvm-ok
 sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils
 sudo adduser (id -un) libvirtd
 virsh list --all
+
 ```
 
 ## VS Code Setup
